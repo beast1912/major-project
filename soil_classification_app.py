@@ -52,7 +52,7 @@ def main():
   loaded_model = tf.keras.models.load_model('mobile_net_model_final1.h5')
 
   # User interface
-  uploaded_file = st.file_uploader("Upload an image here", type=["jpg","png"])
+  uploaded_file = st.file_uploader("Upload soil image here", type=["jpg","png"])
   if uploaded_file is not None:
       image = preprocess_image(uploaded_file)
       # image = np.expand_dims(image, axis=0)  # Add batch dimension
