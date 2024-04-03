@@ -2,7 +2,6 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps # For image processing
 import numpy as np
-import cv2
 
 crop_recommendations = {
     "alluvial_soil": ["Rice", "Sugarcane", "Wheat"],
